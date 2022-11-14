@@ -1,3 +1,5 @@
+package springcore;
+
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class TestSpring {
@@ -7,12 +9,16 @@ public class TestSpring {
                 "applicationContext.xml"
         );
 
-        ClassicalMusic classicalMusic = context.getBean("musicBean", ClassicalMusic.class);
+ /*      MusicPlayer musicPlayer= context.getBean("musicPlayer", MusicPlayer.class);
+       musicPlayer.playMusic();*/
+
+     /*  Music rockMusic = context.getBean("rockMusic", RockMusic.class);
 
         System.out.println(classicalMusic.getSong());
+        System.out.println(rockMusic.getSong());*/
 
-//        MusicPlayer firstMusicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
-//        MusicPlayer secondMusicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
+//        springcore.MusicPlayer firstMusicPlayer = context.getBean("musicPlayer", springcore.MusicPlayer.class);
+//        springcore.MusicPlayer secondMusicPlayer = context.getBean("musicPlayer", springcore.MusicPlayer.class);
 //
 //        boolean comparison = firstMusicPlayer == secondMusicPlayer;
 //
@@ -28,6 +34,9 @@ public class TestSpring {
 
         //System.out.println(musicPlayer.getName());
         //System.out.println(musicPlayer.getVolume());
+
+        Computer computer = context.getBean("computer", Computer.class);
+        System.out.println(computer);
 
         context.close();
     }
