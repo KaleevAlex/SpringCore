@@ -13,6 +13,13 @@ public class Computer {
     public Computer(MusicPlayer musicPlayer) {
         this.id = 1;
         this.musicPlayer = musicPlayer;
+
     }
+    public void music(){
+
+        musicPlayer.playMusic(genre);
+    }
+
+
 
 }
