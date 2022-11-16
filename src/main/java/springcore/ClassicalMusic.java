@@ -7,13 +7,8 @@ import javax.annotation.PreDestroy;
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
-public class ClassicalMusic implements Music {
-    private ClassicalMusic() {}
 
-    public static ClassicalMusic getClassicalMusic() {
-        return new ClassicalMusic();
-    }
+public class ClassicalMusic implements Music {
 
     @PostConstruct
     public void doMyInit() {
